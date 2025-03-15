@@ -16,6 +16,22 @@ Send a command from another pc through one of its com port to the pico and have 
 - 5v / 3.3v Pico compatible Relay
 
 ### Schematic
+![image](./pico.png)
+
+#### RS232
+| Colour    | Pico PIN | Component PIN |
+| --------- | -------- |-------------- | 
+| Red  | 3.3v OUT    | VCC |
+| Blue | RX Pin 2     | RXD |
+| Green    | TX Pin 1    | TXD |
+| Black | GND | GND |
+
+#### Relay
+| Colour    | Pico PIN | Component PIN |
+| --------- | -------- |-------------- | 
+| Red  | 3.3v OUT    | VCC (+) |
+| Black | GND    | GND (-) |
+| Orange    | GP22    | S |
 
 ### PC Commands
 To send data to the pico assuming you use the first com port:
