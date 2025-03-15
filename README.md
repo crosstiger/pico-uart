@@ -19,6 +19,9 @@ Send a command from another pc through one of its com port to the pico and have 
 
 # PC Commands
 To send data to the pico assuming you use the first com port:
-'''shell
+
+```shell
 echo "whatever" | sudo tee /dev/ttyS0
-'''
+```
+
+If you use minicom, make sure to change baudrate by pressing CTRL+A followed by O.
