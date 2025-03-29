@@ -12,7 +12,6 @@ while True:
     try:
         if uart_buffer.any():
             data = uart_buffer.read().strip()
-            print(data)
             if data == b'1':
                 pin.on()
                 uart_buffer.write("Relay turned ON\n\r")
